@@ -1,0 +1,20 @@
+# CPU-only PyTorch lives on its own index. It must be --extra-index-url:
+# the old `torch --index-url ...` line replaced PyPI for the WHOLE file, so
+# every other package failed to resolve.
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+fastapi>=0.110
+uvicorn[standard]>=0.29
+python-dotenv>=1.0
+
+langchain-core>=1.0,<2
+langchain-groq>=1.0,<2
+langchain-huggingface>=1.0,<2
+langchain-chroma>=1.0,<2
+langchain-text-splitters>=1.0,<2
+
+chromadb>=1.0,<2
+sentence-transformers>=3.0
+rank-bm25>=0.2.2
+pypdf>=4.0
+torch

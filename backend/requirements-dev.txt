@@ -1,0 +1,8 @@
+-r requirements.txt
+
+# local UI, tests and the (optional) RAGAS evaluation script
+streamlit
+pytest
+httpx
+ragas
+datasets
